@@ -1,0 +1,96 @@
+Created At: 2026-07-07T11:30:07Z
+Completed At: 2026-07-07T11:30:07Z
+File Path: `file:///c:/PRATIM/Movie-Booking/admin/src/assets/dummyStyles.js`
+Total Lines: 670
+Total Bytes: 33918
+Showing lines 1 to 670
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: // src/assets/dummyStyles.js
+2: // Add these to your existing assets/dummyStyles.js
+3: 
+4: export const addMoviePageStyles = {
+5:   // Layout and container styles
+6:   pageContainer: "min-h-screen p-4 sm:p-6 bg-gradient-to-b from-black via-gray-900 to-gray-800 text-gray-100",
+7:   mainContainer: "max-w-6xl mx-auto bg-gradient-to-r from-black via-red-900 to-black/80 border-2 border-red-700 rounded-2xl p-4 sm:p-6 md:p-8 shadow-2xl",
+8:   
+9:   // Header
+10:   header: "flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6 gap-4",
+11:   title: "text-2xl sm:text-3xl md:text-4xl font-bold",
+12:   titleIcon: "inline-block mr-2 -translate-y-1",
+13:   
+14:   // Form
+15:   form: "space-y-6",
+16:   radioContainer: "flex flex-col sm:flex-row sm:flex-wrap gap-3 lg:gap-4",
+17:   radioLabel: "flex items-center gap-2",
+18:   radioInput: "accent-red-600",
+19:   
+20:   // Sections
+21:   section: "bg-black/20 p-4 rounded-lg border border-red-700",
+22:   sectionGrid: "grid grid-cols-1 sm:grid-cols-2 gap-4",
+23:   sectionTitle: "font-semibold",
+24:   
+25:   // Input fields
+26:   inputContainer: "",
+27:   label: "block text-sm mb-2",
+28:   input: "w-full rounded-lg p-3 bg-black/20 border border-red-600 placeholder-gray-400",
+29:   textarea: "w-full rounded-lg p-3 bg-black/20 border border-red-600",
+30:   numberInput: "w-32 rounded-lg p-2 bg-black/20 border border-red-600",
+31:   select: "w-full rounded-lg p-2 bg-black/20 border border-red-600",
+32:   
+33:   // Category buttons
+34:   categoryContainer: "flex gap-3 flex-wrap",
+35:   categoryB
+<truncated 33593 bytes>
+619:   bookingId: "text-xs text-gray-400",
+620:   bookingIdValue: "font-mono ml-1 text-xs text-gray-200",
+621:   bookedByLabel: "text-xs text-gray-400 mt-1",
+622:   bookedByValue: "text-sm font-semibold text-gray-200",
+623:   seatsLabel: "text-xs text-gray-400",
+624:   seatsValue: "font-semibold text-gray-200",
+625:   
+626:   // Details section
+627:   detailContainer: "mt-3 text-sm text-gray-300 space-y-2",
+628:   detailItem: "flex items-center gap-2",
+629:   detailIcon: "w-4 h-4 text-red-400",
+630:   auditoriumLabel: "text-xs text-gray-400 mr-2",
+631:   auditoriumValue: "font-semibold text-gray-200",
+632:   
+633:   // Amount section
+634:   amountLabel: "text-xs text-gray-400",
+635:   amountValue: "text-lg font-bold text-red-300"
+636: };
+637: 
+638: 
+639: // CSS styles for custom classes
+640: export const customStyles = `
+641:   @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+642:   .card-hover {
+643:     transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+644:   }
+645:   .card-hover:hover {
+646:     transform: translateY(-8px);
+647:     box-shadow: 0 25px 50px -12px rgba(220, 38, 38, 0.25);
+648:   }
+649:   .filter-btn {
+650:     transition: all 0.18s ease-in-out;
+651:   }
+652:   .gradient-border {
+653:     background: linear-gradient(135deg, rgba(220, 38, 38, 0.06), rgba(185, 28, 28, 0.02));
+654:     border: 1px solid rgba(220, 38, 38, 0.08);
+655:   }
+656:   .scrollbar-thin::-webkit-scrollbar {
+657:     width: 6px;
+658:   }
+659:   .scrollbar-thin::-webkit-scrollbar-track {
+660:     background: rgba(75, 85, 99, 0.18);
+661:     border-radius: 10px;
+662:   }
+663:   .scrollbar-thin::-webkit-scrollbar-thumb {
+664:     background: rgba(220, 38, 38, 0.35);
+665:     border-radius: 10px;
+666:   }
+667:   .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+668:     background: rgba(220, 38, 38, 0.5);
+669:   }
+670: `;
+The above content shows the entire, complete file contents of the requested file.

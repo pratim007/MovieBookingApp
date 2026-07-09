@@ -1,0 +1,28 @@
+Created At: 2026-07-07T11:32:50Z
+Completed At: 2026-07-07T11:32:50Z
+File Path: `file:///c:/PRATIM/Movie-Booking/admin/src/assets/dummyStyles.js`
+Total Lines: 670
+Total Bytes: 33918
+Showing lines 1 to 20
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: // src/assets/dummyStyles.js
+2: // Add these to your existing assets/dummyStyles.js
+3: 
+4: export const addMoviePageStyles = {
+5:   // Layout and container styles
+6:   pageContainer: "min-h-screen p-4 sm:p-6 bg-gradient-to-b from-black via-gray-900 to-gray-800 text-gray-100",
+7:   mainContainer: "max-w-6xl mx-auto bg-gradient-to-r from-black via-red-900 to-black/80 border-2 border-red-700 rounded-2xl p-4 sm:p-6 md:p-8 shadow-2xl",
+8:   
+9:   // Header
+10:   header: "flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6 gap-4",
+11:   title: "text-2xl sm:text-3xl md:text-4xl font-bold",
+12:   titleIcon: "inline-block mr-2 -translate-y-1",
+13:   
+14:   // Form
+15:   form: "space-y-6",
+16:   radioContainer: "flex flex-col sm:flex-row sm:flex-wrap gap-3 lg:gap-4",
+17:   radioLabel: "flex items-center gap-2",
+18:   radioInput: "accent-red-600",
+19:   
+20:   // Sections
+The above content does NOT show the entire file contents. If you need to view any lines of the file which were not shown to complete your task, call this tool again to view those lines.
