@@ -5,7 +5,7 @@ import axios from 'axios';
 import {toast, ToastContainer} from 'react-toastify';
 import {Film, Image as ImageIcon, Play, Star, Clock, Plus,X,Upload,Users} from 'lucide-react'
 
-const API_HOST = 'http://localhost:5000/';
+const API_HOST = (import.meta.env.VITE_API_BASE || 'http://localhost:5000').replace(/\/+$/, '') + '/';
 
 const AddPage = () => {
     const [movieName, setMovieName] = useState("");
