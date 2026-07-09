@@ -12,7 +12,7 @@ const RECLINER_ROWS = new Set(["D", "E"]);
 const BLOCKING_STATUSES = ["pending", "paid", "confirmed", "active", "upcoming"];
 
 function getStripeOrThrow() {
-  if (!STRIPE_SECRET_KEY) throw new Error("Missing STRIPE_SECRET_KEY in env");
+  if (!STRIPE_SECRET_KEY) throw new Error("Missing STRIPE_SECRET_KEY");
   return new Stripe(STRIPE_SECRET_KEY, { apiVersion: STRIPE_API_VERSION });
 }
 
