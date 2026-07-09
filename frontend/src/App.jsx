@@ -2,17 +2,17 @@
 import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
-import Home from "./pages/Home/Home";
-import Movie from "./pages/Movie/Movie";
-import Release from "./pages/Release/Release";
-import Contact from "./pages/Contact/Contact";
-import SignUp from "./pages/SignUp/SignUp";
-import Login from "./pages/Login/Login";
-import MovieDetailPage from "./pages/MovieDetailPage/MovieDetailPage";
-import SeatSelectorPage from "./components/SeatSelectorPage/SeatSelectorPage";
-import MovieDetailPageHome from "./pages/MovieDetailPageHome/MovieDetailPageHome";
-import SeatSelectorPageHome from "./components/SeatSelectorPageHome/SeatSelectorPageHome";
-import Booking from "./pages/Booking/Booking";
+import Home from "./Pages/Home/Home";
+import Movie from "./Pages/Movie/Movie";
+import Release from "./Pages/Release/Release";
+import Contact from "./Pages/Contact/Contact";
+import SignUp from "./Pages/SignUp/SignUp";
+import Login from "./Pages/Login/Login";
+import MovieDetailPage from "./Pages/MovieDetailPage/MovieDetailPage";
+import SeatSelectorPage from "./Components/SeatSelectorPage/SeatSelectorPage";
+import MovieDetailPageHome from "./Pages/MovieDetailPageHome/MovieDetailPageHome";
+import SeatSelectorPageHome from "./Components/SeatSelectorPageHome/SeatSelectorPageHome";
+import Booking from "./Pages/Booking/Booking";
 import VerifyPaymentPage from "../VerifyPaymentPage";
 
 /**
