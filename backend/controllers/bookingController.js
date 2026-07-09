@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const CLIENT_URL = "http://localhost:5173";
-const STRIPE_SECRET_KEY = process.env.STRIPE_SECRET_KEY || "sk_test_51SVyEsRvKpcd4l97mPYKPM9VSa4B55bDvE6W2itypaH7DkFhdNwnNg16M9SjVcJ3Lkf3yAVZnR1EeiHK4UmKEWmr00pNFbBgr6";
+const STRIPE_SECRET_KEY = process.env.STRIPE_SECRET_KEY;
 const STRIPE_API_VERSION = "2022-11-15";
 const RECLINER_ROWS = new Set(["D", "E"]);
 const BLOCKING_STATUSES = ["pending", "paid", "confirmed", "active", "upcoming"];
