@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '../../components/Navbar/Navbar';
-import ReleasesPage from '../../components/ReleasesPage/ReleasesPage';
-import Footer from './../../components/Footer/Footer';
+import Navbar from '../../Components/Navbar/Navbar';
+import ReleasesPage from '../../Components/ReleasesPage/ReleasesPage';
+import Footer from './../../Components/Footer/Footer';
 
 const Release = () => {
   return (

@@ -1,10 +1,10 @@
 import React from 'react'
-import Navbar from '../../components/Navbar/Navbar'
-import Banner from '../../components/Banner/Banner'
-import Movies from '../../components/Movies/Movies'
-import Trailers from '../../components/Trailers/Trailers'
-import News from '../../components/News/News'
-import Footer from '../../components/Footer/Footer'
+import Navbar from '../../Components/Navbar/Navbar'
+import Banner from '../../Components/Banner/Banner'
+import Movies from '../../Components/Movies/Movies'
+import Trailers from '../../Components/Trailers/Trailers'
+import News from '../../Components/News/News'
+import Footer from '../../Components/Footer/Footer'
 
 const Home = () => {
   return (

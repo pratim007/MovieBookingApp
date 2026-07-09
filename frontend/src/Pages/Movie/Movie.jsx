@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '../../components/Navbar/Navbar'
-import MoviesPage from '../../components/MoviesPage/MoviesPage'
-import Footer from './../../components/Footer/Footer';
+import Navbar from '../../Components/Navbar/Navbar'
+import MoviesPage from '../../Components/MoviesPage/MoviesPage'
+import Footer from './../../Components/Footer/Footer';
 
 const Movie = () => {
   return (
