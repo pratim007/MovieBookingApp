@@ -19,7 +19,8 @@ app.use(express.urlencoded({ extended: true }));
 connectDB();
 
 // Routes
-app.use("/uploads", express.static(path.join(process.cwd(), "uploads"))); 
+const uploadDir = process.env.VERCEL ? "/tmp" : path.join(process.cwd(), "uploads");
+app.use("/uploads", express.static(uploadDir));
 app.use("/api/auth", userRouter)
 app.use("/api/movies", movieRouter);
 app.use("/api/bookings", bookingRouter);

@@ -1,6 +1,7 @@
 import express from "express";
 import multer from "multer";
 import path from "path";
+import fs from "fs";
 import {
   createMovie,
   getMovies,
@@ -10,9 +11,18 @@ import {
 
 const movieRouter = express.Router();
 
+const uploadDir = process.env.VERCEL
+  ? "/tmp"
+  : path.join(process.cwd(), "uploads");
+
+// Ensure local uploads directory exists
+if (!process.env.VERCEL && !fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir, { recursive: true });
+}
+
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, path.join(process.cwd(), "uploads")); // ➜ ./uploads
+    cb(null, uploadDir);
   },
   filename: (req, file, cb) => {
     const unique = Date.now() + "-" + Math.round(Math.random() * 1e5);
