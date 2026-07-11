@@ -83,7 +83,7 @@ export const registerUser = async (req, res) => {
       const dupKey = Object.keys(err.keyValue || {})[0];
       return res.status(400).json({ success: false, message: `${dupKey} already exists` });
     }
-    return res.status(500).json({ success: false, message: "Server error" });
+    return res.status(500).json({ success: false, message: "Server error", error: err.message || String(err) });
   }
 };
 
@@ -112,6 +112,6 @@ export async function login(req, res) {
     });
   } catch (err) {
     console.error("Login error:", err);
-    return res.status(500).json({ success: false, message: "Server error." });
+    return res.status(500).json({ success: false, message: "Server error.", error: err.message || String(err) });
   }
 }

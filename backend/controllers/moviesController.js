@@ -197,7 +197,7 @@ export async function createMovie(req, res) {
     return res.status(201).json({ success: true, message: "Movie created", data: saved });
   } catch (err) {
     console.error("createMovie error:", err);
-    return res.status(500).json({ success: false, message: "Server error" });
+    return res.status(500).json({ success: false, message: "Server error", error: err.message || String(err) });
   }
 }
 
@@ -230,7 +230,7 @@ export async function getMovies(req, res) {
     return res.json({ success: true, total, page: pg, limit: lim, items: normalized });
   } catch (err) {
     console.error("getMovies error:", err);
-    return res.status(500).json({ success: false, message: "Server error" });
+    return res.status(500).json({ success: false, message: "Server error", error: err.message || String(err) });
   }
 }
 
@@ -256,7 +256,7 @@ export async function getMovieById(req, res) {
     return res.json({ success: true, item: obj });
   } catch (err) {
     console.error("getMovieById error:", err);
-    return res.status(500).json({ success: false, message: "Server error" });
+    return res.status(500).json({ success: false, message: "Server error", error: err.message || String(err) });
   }
 }
 
@@ -286,7 +286,7 @@ export async function deleteMovie(req, res) {
     return res.json({ success: true, message: "Movie deleted" });
   } catch (err) {
     console.error("deleteMovie error:", err);
-    return res.status(500).json({ success: false, message: "Server error" });
+    return res.status(500).json({ success: false, message: "Server error", error: err.message || String(err) });
   }
 }
 
